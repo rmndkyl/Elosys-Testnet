@@ -48,7 +48,7 @@ npm install readline-sync chalk fs ethers
 ```
 
 ### Perbarui Private Keys:
-Buka file `privateKeys.json`.
+Buka file `privateKeys.json` di direktori `config/privateKeys.json`.
 Tambahkan private key kamu ke file ini. Pastikan formatnya sesuai dengan yang diharapkan oleh script.
 
 ### Buka file addresses.txt.
@@ -59,6 +59,9 @@ Format Address:
 0xabc
 0xblablabla
 ```
+
+### Random Generate Address
+Address akan tergenerate otomatis sesuai dengan jumlah yang kamu pilih, jadi tidak perlu mengisi file `addresses.txt`
 
 ## Jalankan Script Auto-Transfer:
 Jalankan perintah berikut untuk memulai proses transfer otomatis:
