@@ -44,6 +44,7 @@ cd Elosys-Auto-Transfer
 Jalankan perintah berikut untuk menginstal semua dependencies yang diperlukan sesuai dengan yang tercantum di file package.json.
 ```bash
 npm install
+npm install readline-sync chalk fs ethers
 ```
 
 ### Perbarui Private Keys:
