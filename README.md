@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/37c4273a-c6a4-41c8-b58c-5805c445b94d)
+![image](https://github.com/user-attachments/assets/4ba328c2-3e0c-41a9-ae6f-1864596aa9d7)
+----------------------------------------------------------------
 # Tutorial: Cara Menjalankan Script untuk Elosys-Deploy-Contract dan Elosys-Auto-Transfer
  - Panduan ini akan membantu kamu dalam menyiapkan dan menjalankan script dari proyek `Elosys-Deploy-Contract` dan `Elosys-Auto-Transfer`.
  - Instruksi ini cocok untuk pemula yang sudah memiliki pengetahuan dasar dalam menggunakan command line dan sudah menginstal Node.js di Windows/Linux kalian.
