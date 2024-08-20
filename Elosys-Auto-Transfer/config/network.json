@@ -1,0 +1,6 @@
+{
+  "Elosys Testnet": {
+    "RPC_URL": "https://testnet-rpc.elosys.io",
+    "CHAIN_ID": "51215"
+  }
+}
