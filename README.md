@@ -28,7 +28,7 @@ npm install
 ```
 
 ### Perbarui Private Keys:
-Buka file `privateKeys.json`.
+Buka file `privateKeys.txt`.
 Tambahkan private key kamu ke file ini. Pastikan formatnya sesuai dengan yang diharapkan oleh script.
 
 ## Deploy Kontrak:
@@ -51,7 +51,7 @@ npm install readline-sync chalk fs ethers
 ```
 
 ### Perbarui Private Keys:
-Buka file `privateKeys.json` di direktori `config/privateKeys.json`.
+Buka file `privateKeys.txt`.
 Tambahkan private key kamu ke file ini. Pastikan formatnya sesuai dengan yang diharapkan oleh script.
 
 ### Buka file addresses.txt.
