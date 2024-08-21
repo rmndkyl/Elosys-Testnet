@@ -2,8 +2,8 @@ const hre = require("hardhat");
 const fs = require('fs');
 
 async function main() {
-  // Read private keys from privateKeys.json
-  const privateKeys = JSON.parse(fs.readFileSync('privateKeys.json')).privateKeys;
+  // Read private keys from privateKeys.txt
+  const privateKeys = fs.readFileSync('privateKeys.txt', 'utf-8').trim().split('\n').map(key => `0x${key.trim()}`);
 
   // Loop over each private key
   for (let i = 0; i < privateKeys.length; i++) {
