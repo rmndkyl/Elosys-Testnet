@@ -8,8 +8,23 @@ import { printName } from './utils/name.js';
 // Load network configuration
 const networkConfig = JSON.parse(fs.readFileSync('./config/network.json', 'utf-8'));
 
-// Load private keys from privateKeys.json
-const privateKeys = JSON.parse(fs.readFileSync('./config/privateKeys.json', 'utf-8'));
+// Function to load private keys from file
+function loadPrivateKeys(filename) {
+    try {
+        const data = fs.readFileSync(filename, 'utf-8');
+        // Split by newline, trim whitespace, and filter out empty lines
+        const privateKeys = data.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+        if (privateKeys.length === 0) {
+            throw new Error('No private keys found in the file');
+        }
+        return privateKeys;
+    } catch (err) {
+        throw new Error(`Error reading file ${filename}: ${err.message}`);
+    }
+}
+
+// Load private keys from privateKeys.txt
+const privateKeys = loadPrivateKeys('./privateKeys.txt');
 
 // Function to select network
 function selectNetwork(networkIndex) {
